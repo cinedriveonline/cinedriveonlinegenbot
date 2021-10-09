@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinedriveonline generador telegram uniqedumx</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+  
+  <!-- Css navbar -->
+  <link href="../static/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- Css para el cuadro contenido -->
+    <link href="../static/heroes.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../static/bootstrap-logo.svg" alt="" width="30" height="24">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                </li>
+                <!-- 
+                <li class="nav-item">
+                  <a class="nav-link" href="https://uniq.edu.mx">UNIQ web</a>
+                </li>  -->
+              </ul>
+            
+               
+                <button class="btn btn-outline-success d-flex" onclick="window.location.href='https://uniq.edu.mx'">Contenido Gratis</button>
+                
+              
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    {% block content %}
+    {% endblock %}
+
+
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container">
+              <span class="text-muted">No olvides subscribirte al grupo telegram @cinedriveonline.</span>
+            </div>
+          </footer>
+          
+          
+             
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+              crossorigin="anonymous"></script>
+                
+               <!-- Inicio script copiar -->
+
+                <!--LO que quiero copiar en un div--> 
+                <!-- <div id="a-code-snippet">Lo que quiero copiar </div>-->
+                <!-- fin de LO que quiero copiar en un div y despues el script copiar-->
+                <!-- Script copiar inicio-->
+                <script>
+                    // Once we have the element we want to copy from, copy to clipboard.
+                       function copyTextFromEl(el) {
+                           var tmp = document.createElement("textarea");
+                           tmp.value = el.textContent;
+                           // Prevent text area from briefly being visible.
+                           tmp.style.height = "0";
+                           tmp.style.overflow = "hidden";
+                           // Fixed prevents browser from scrolling to the textarea (if it is
+                           // outside the current view).
+                           tmp.style.position = "fixed";
+                           document.body.appendChild(tmp);
+                           tmp.focus();
+                           tmp.select();
+                           document.execCommand("copy");
+                           document.body.removeChild(tmp);
+                       }
+   
+                       // Handle click event on bound button.
+                       function clickListener(e) {
+                           // Using currentTarget ensures the user actually clicked on the button.
+                           // Events in JavaScript bubble and currentTarget ensures you receive the
+                           // button element your event listened for clicks on.
+                           var btn = e.currentTarget;
+                           // Since we're dealing with DOM which could be manipulated by other code
+                           // on the page, it is best to ensure the property that's expected exists
+                           // and that it was able to find the copy-from target.
+                           //
+                           // If you're unfamiliar with data-* attributes, they can be accessed from
+                           // JavaScript using the dataset object. Hyphens in the HTML are removed
+                           // and the property name is converted to camel case.
+                           //
+                           // Thus "data-copy-from" is accessed as "btn.dataset.copyFrom"
+                           if ("copyFrom" in btn.dataset) {
+                               var copyEl = document.querySelector(btn.dataset.copyFrom);
+                               if (copyEl) {
+                                   copyTextFromEl(copyEl);
+                               }
+                           }
+                       }
+   
+                       // App binding to all buttons with copy-element-text class.
+                       //
+                       // While our example only has one button, selecting all instances on the
+                       // page and adding listeners to each, establishes a re-usable feature on the
+                       // page.
+                       var buttons = document.querySelectorAll("button.copy-element-text");
+                       for (var i = 0; i < buttons.length; i++) {
+                           buttons[i].addEventListener("click", clickListener);
+                       }
+                   </script>
+                   <!-- Fin script copiar -->
+            </body>
+          </html>
+          
