@@ -4,6 +4,10 @@ Me gusta compartir peliculas en telegram pero al crear la publicacion me dio hue
 
 ## TUTORIAL COMPLETO Y CON VIDEO
 
+![Generador](https://user-images.githubusercontent.com/13319563/136675097-083edaf5-e587-4dbd-86a2-996ad956f283.png)
+
+### Obtendras un resultado asi, y puedes copiarlo
+![resultado](https://user-images.githubusercontent.com/13319563/136675112-a2e0fa71-b6b5-402d-aea1-e83eb8230025.png)
 
 Checa el video para guiarte mejor.
 
