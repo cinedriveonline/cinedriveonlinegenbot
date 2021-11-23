@@ -20,4 +20,4 @@ Si lo que deseas al crear la aplicacion en heroku, que te sincronize cambios de 
 1. Abre heroku y crea una nueva app con el nombre que desees
 2. Selecciona tu app en heroku y en la pesta;a DEPLOY dale click y selecciona github, conecta tu cuenta y pega o busca el nombre del repositorio forkeado 
 3. dale Deploy
-4. Sigue la guia completa de como realizarlo en ![App flask Heroku crear generar post telegram repetitivo cinedriveonlinegen](https://uniq.edu.mx/app-flask-heroku-crear-generar-post-telegram-repetitivo-cinedriveonlinegen)
+4. Sigue la guia completa de como realizarlo en [App flask Heroku crear generar post telegram repetitivo cinedriveonlinegen](https://uniq.edu.mx/app-flask-heroku-crear-generar-post-telegram-repetitivo-cinedriveonlinegen)
